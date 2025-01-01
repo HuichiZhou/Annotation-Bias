@@ -2,7 +2,7 @@ import json
 
 data = []
 
-with open("results.jsonl", "r") as f:
+with open("parsed_results.jsonl", "r") as f:
     for line in f:
         item = json.loads(line)
         if item['Annotation'] != item['Human Label']:
